@@ -18,15 +18,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="About Me"
-        android:id="@+id/button"
+        android:id="@+id/btnAboutMe"
         android:layout_alignParentBottom="true" />
 
     <ListView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/listView"
+        android:id="@+id/listTraffic"
         android:layout_below="@+id/head"
-        android:layout_above="@+id/button"
+        android:layout_above="@+id/btnAboutMe"
         android:layout_margin="20dp"
         android:background="#64ffffff" />
 </RelativeLayout>
