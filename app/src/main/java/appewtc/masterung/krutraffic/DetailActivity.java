@@ -49,12 +49,17 @@ public class DetailActivity extends AppCompatActivity {
         int intImage = getIntent().getIntExtra("Image", R.drawable.traffic_01);
         imageView.setImageResource(intImage);
 
+        //Show Detail
+        String[] strDetail = getResources().getStringArray(R.array.traffic_detail_long);
+        int intIndex = getIntent().getIntExtra("Index", 0);
+        detailTextView.setText(strDetail[intIndex]);
+
     }   // showView
 
     private void bindWidget() {
 
         titleTextView = (TextView) findViewById(R.id.txtShowTitleDetail);
-        detailTextView = (TextView) findViewById(R.id.txtShowDetail);
+        detailTextView = (TextView) findViewById(R.id.txtDetailLong);
         imageView = (ImageView) findViewById(R.id.imvShowImage);
 
     }   // bindWidget
